@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 # --* coding: utf-8 -*-
+import os
+#os.abort
+print("os")
 
 print(not True)
 print(-5 != False !=True)
@@ -418,3 +421,6 @@ for x in (-y for y in range(8,15)):
 type(range(1,2))
 #for key in {'hu':1,'ui':5}.keys:
 #    print(key+':')
+print([-x for x in [1,2,3]])
+import os
+
