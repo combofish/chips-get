@@ -1,0 +1,28 @@
+body {
+    padding: 50px;
+    font: 14px;
+}
+
+a {
+    color: #00B7FF;
+}
+
+#content {
+    width:80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#room {
+    background-color: #ddd;
+    margin-bottom: lem;
+}
+
+#message {
+    width: 690px;
+    height: 300px;
+    overflow: auto;
+    background-color: #eee;
+    margin-bottom: lem;
+    margin-right: 10px;
+}
