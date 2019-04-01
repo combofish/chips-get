@@ -38,4 +38,4 @@ var myobj = Object.create(myPrototype)
 console.log(myObj.meaningOfLife)  //44
 console.log(myPrototype.meaningOfLife) //43
 
-
+console.log(myObj)
