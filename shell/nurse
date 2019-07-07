@@ -1,0 +1,25 @@
+#!/bin/env sh
+
+who | wc -l
+myvar=name_li_ming
+echo $myvar
+my=$myvar
+myvar="name li ming"
+echo $myvar
+echo "$my and $myvar \r echo use"
+
+echo "the first program ofen print %s, %s\n" hello world
+for f in ./*.sh
+do
+    echo ok
+    echo "$f\n"
+done
+
+echo "Enter a new passwd: "
+stty -echo
+read pass < /dev/tty
+echo "\nEnter again: "
+read pass2 < /dev/tty
+stty echo
+echo "\nlogin success pass: $pass and pass2: $pass2\n"
+

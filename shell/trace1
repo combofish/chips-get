@@ -1,0 +1,9 @@
+#!/bin/env sh
+
+# trace1
+echo ok
+set -x 
+echo 1st echo
+set +x 
+echo ok
+echo 2st echo

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# finduser
+
+who | grep $1
