@@ -1,3 +1,7 @@
+
+(defun lod()
+  (load "./learn_2.lisp"))
+
 (defun get-one ()
   (format t "hahah"))
 
@@ -32,3 +36,13 @@
 
 (defun double2 (x)
   (* x x))
+
+(defun format-test ()
+  (format t "~5$" pi)
+  (format t "~v$" 3 pi)
+  (format t "~#$" pi))
+
+(defun open-test ()
+  (let ((in (open "./learn_1.lisp")))
+    (format t "~a~%" (read-line in))
+    (close in)))
