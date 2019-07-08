@@ -1,3 +1,7 @@
-
+## file
 clisp/learn_1.fasl 
 clisp/learn_2.fasl
+
+## dir
+python3/photo
+python3/__pycache__/
