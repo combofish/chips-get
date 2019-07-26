@@ -68,10 +68,43 @@ def fourier2():
     plot(transformed)
     show()
 
+def plot_sinc():
+    from numpy import sinc, linspace
+    from matplotlib.pyplot import plot, show
+
+    x = linspace(0, 4, 100)
+    vals = sinc(x)
+
+    plot(x, vals)
+    show()
+
+def plot_sinc2d():
+    from numpy import linspace, outer, sinc
+    from matplotlib.pyplot import imshow, show
+
+    x = linspace(0, 4, 100)
+    xx = outer(x,x)
+    vals = sinc(xx)
+
+    print("x = ", x, " xx = ", xx, "vals = ", vals)
+    imshow(vals)
+    show()
+
+def kaiser():
+    from numpy import kaiser
+    from matplotlib.pyplot import plot, show
+
+    window = kaiser(42,14)
+    plot(window)
+    show()
+    
 if __name__ == '__main__':
     # create_array()
     # array_property()
     # lissajout()
     # print(sin(4))  # undefined
     # fourier()
-    fourier2()
+    # fourier2()
+    # plot_sinc()
+    # plot_sinc2d()
+    kaiser()
