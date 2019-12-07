@@ -1,5 +1,5 @@
 ## file
-clisp/learn_1.fasl 
+clisp/learn_1.fasl
 clisp/learn_2.fasl
 
 ## dir
@@ -7,3 +7,5 @@ python3/photo
 python3/__pycache__/
 python3/conver/
 python3/python-img-rec/flower_photos/
+python3/image-identification/flower_photos/
+python3/image-identification/image_data/
