@@ -31,6 +31,7 @@ parser = PDFParser(fp)
 #创建一个PDF文档对象存储文档结构
 document = PDFDocument(parser)
 
+page_num = 1
 # 检查文件是否允许文本提取
 if not document.is_extractable:
     raise PDFTextExtractionNotAllowed
@@ -46,6 +47,9 @@ else:
     interpreter=PDFPageInterpreter(rsrcmgr,device)
     # 处理每一页
     for page in PDFPage.create_pages(document):
+        page_num = page_num + 1
+        print("page_num: ", page_num)
+        
         interpreter.process_page(page)
         # 接受该页面的LTPage对象
         layout=device.get_result()
