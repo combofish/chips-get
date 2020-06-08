@@ -1,8 +1,8 @@
-/**
- * For BMP085.
- * Modified in 5/12/2020.
- * Modified by combofish.
- */
+	/**
+	 * For BMP085.
+	 * Modified in 5/12/2020.
+	 * Modified by combofish.
+	 */
 
 #ifndef __bmp085_H
 #define __bmp085_H
