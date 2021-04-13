@@ -15,7 +15,6 @@ import com.atuse.test.JDBCUtils;
 /**
  * 
  * @Description 针对于Customers表的查询操作
- * @author shkstart Email:shkstart@126.com
  * @version
  * @date 上午10:04:55
  *
@@ -36,7 +35,6 @@ public class CustomerForQuery {
 	/**
 	 * 
 	 * @Description 针对于customers表的通用的查询操作
-	 * @author shkstart
 	 * @throws Exception
 	 * @date 上午10:23:40
 	 */

@@ -18,8 +18,8 @@ public class TestConnect {
 		String url = "jdbc:mysql://localhost:3306/test";
 		// Properties 封装数据库的用户名和密码
 		Properties info = new Properties();
-		info.setProperty("user", "larry");
-		info.setProperty("password", "Confidence*1234");
+		info.setProperty("user", "");
+		info.setProperty("password", "");
 
 		Connection connect = driver.connect(url, info);
 		System.out.println(connect);

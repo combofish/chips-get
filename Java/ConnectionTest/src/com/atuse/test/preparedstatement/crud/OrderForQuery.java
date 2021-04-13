@@ -15,7 +15,6 @@ import com.atuse.test.JDBCUtils;
 /**
  * 
  * @Description 针对于Order表的通用的查询操作
- * @author shkstart Email:shkstart@126.com
  * @version
  * @date 上午10:43:58
  *
@@ -38,7 +37,6 @@ public class OrderForQuery {
 	/**
 	 * 
 	 * @Description 通用的针对于order表的查询操作
-	 * @author shkstart
 	 * @date 上午10:51:12
 	 * @return
 	 * @throws Exception

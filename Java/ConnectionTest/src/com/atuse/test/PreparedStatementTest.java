@@ -12,7 +12,6 @@ import org.junit.Test;
 /**
  * 
  * @Description 演示使用PreparedStatement替换Statement，解决SQL注入问题
- * @author shkstart Email:shkstart@126.com
  * @version
  * @date 上午11:52:37
  * 
@@ -44,7 +43,6 @@ public class PreparedStatementTest {
 	/**
 	 * 
 	 * @Description 针对于不同的表的通用的查询操作，返回表中的一条记录
-	 * @author shkstart
 	 * @date 上午11:42:23
 	 * @param clazz
 	 * @param sql

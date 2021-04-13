@@ -19,7 +19,6 @@ import com.atuse.test.JDBCUtils;
 /**
  * 
  * @Description 测试使用PreparedStatement操作Blob类型的数据
- * @author shkstart Email:shkstart@126.com
  * @version
  * @date 下午4:08:58
  *

@@ -24,7 +24,6 @@ public class JDBCUtils {
 	/**
 	 * 
 	 * @Description 获取数据库的连接
-	 * @author shkstart
 	 * @date 上午9:11:23
 	 * @return
 	 * @throws Exception
@@ -52,7 +51,6 @@ public class JDBCUtils {
 	/**
 	 * 
 	 * @Description 使用C3P0的数据库连接池技术
-	 * @author shkstart
 	 * @date 下午3:01:25
 	 * @return
 	 * @throws SQLException
@@ -68,7 +66,6 @@ public class JDBCUtils {
 	/**
 	 * 
 	 * @Description 使用DBCP数据库连接池技术获取数据库连接
-	 * @author shkstart
 	 * @date 下午3:35:25
 	 * @return
 	 * @throws Exception
@@ -119,8 +116,6 @@ public class JDBCUtils {
 	/**
 	 * 
 	 * @Description 关闭连接和Statement的操作
-	 * @author shkstart
-	 * @date 上午9:12:40
 	 * @param conn
 	 * @param ps
 	 */
@@ -141,8 +136,6 @@ public class JDBCUtils {
 	/**
 	 * 
 	 * @Description 关闭资源操作
-	 * @author shkstart
-	 * @date 上午10:21:15
 	 * @param conn
 	 * @param ps
 	 * @param rs
@@ -171,8 +164,6 @@ public class JDBCUtils {
 	/**
 	 * 
 	 * @Description 使用dbutils.jar中提供的DbUtils工具类，实现资源的关闭
-	 * @author shkstart
-	 * @date 下午4:53:09
 	 * @param conn
 	 * @param ps
 	 * @param rs

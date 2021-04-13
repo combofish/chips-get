@@ -17,7 +17,6 @@ import com.atuse.test.JDBCUtils;
 /**
  * 
  * @Description 使用PreparedStatement实现针对于不同表的通用的查询操作
- * @author shkstart Email:shkstart@126.com
  * @version
  * @date 上午11:32:55
  *
@@ -100,7 +99,6 @@ public class PreparedStatementQueryTest {
 	/**
 	 * 
 	 * @Description 针对于不同的表的通用的查询操作，返回表中的一条记录
-	 * @author shkstart
 	 * @date 上午11:42:23
 	 * @param clazz
 	 * @param sql

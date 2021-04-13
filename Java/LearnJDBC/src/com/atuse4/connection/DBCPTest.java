@@ -16,7 +16,6 @@ public class DBCPTest {
 	/**
 	 * 
 	 * @Description 测试DBCP的数据库连接池技术
-	 * @author shkstart
 	 * @throws SQLException
 	 * @date 下午3:20:50
 	 */
@@ -29,8 +28,8 @@ public class DBCPTest {
 		// 设置基本信息
 		source.setDriverClassName("com.mysql.jdbc.Driver");
 		source.setUrl("jdbc:mysql:///test");
-		source.setUsername("root");
-		source.setPassword("abc123");
+		source.setUsername("");
+		source.setPassword("");
 
 		// 还可以设置其他涉及数据库连接池管理的相关属性：
 		source.setInitialSize(10);
