@@ -1,0 +1,17 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.divForm {
+    text-align: center; /*(让div中的内容居中)*/
+}
+
+.bodyImg {
+    background-image: url(../image/BrightonSnow.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+}
