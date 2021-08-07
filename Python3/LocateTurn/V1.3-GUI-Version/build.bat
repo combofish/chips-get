@@ -1,0 +1,1 @@
+cxfreeze CoordinateConversion.py --target-dir dist --base-name=win32gui

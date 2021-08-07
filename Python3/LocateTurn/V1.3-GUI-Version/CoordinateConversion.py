@@ -33,7 +33,7 @@ class ConfContent():
         self.currentDir = os.path.split(os.path.realpath(__file__))[0]
         configFilePath = os.path.join(self.currentDir, "config.ini")
         self.confTool = configparser.ConfigParser()
-        self.confTool.read(configFilePath)
+        self.confTool.read(configFilePath,encoding='utf-8')
         self.sectionName = self.confTool.sections()[0]
 
         self.author = self.getPara("author")
@@ -75,12 +75,12 @@ class ResultTextFrame(wx.Frame):
         imageStartTagText = confCont.imageStartTagText
         
         wx.Frame.__init__(self,None,title= APP_TITTLE,pos= (500,200),size= (630,500))
-        icon = wx.Icon(APP_ICON, wx.BITMAP_TYPE_ICO)
-        self.SetIcon(icon)
+        # icon = wx.Icon(APP_ICON, wx.BITMAP_TYPE_ICO)
+        # self.SetIcon(icon)
         panel=wx.Panel(self,-1)
         dataText = wx.StaticText(panel, -1, "源数据文件目录: " + dataDir + "\\",pos=(6,7), size=(160,24), style=wx.ALIGN_LEFT)
         resultText = wx.StaticText(panel,-1, "坐标文件输出目录: " + resDir + "\\",pos= (190,7),size= (200,24),style=wx.ALIGN_LEFT)
-        imageStartTagText = wx.StaticText(panel,-1, "图标样式起始标号: " + str(imageStartTagText),pos= (380,7),size= (200,24),style=wx.ALIGN_LEFT)
+        imageStartTagText = wx.StaticText(panel,-1, "图标样式起始标号: " + str(imageStartTagText),pos= (380,7),size= (120,24),style=wx.ALIGN_LEFT)
         turnButton = wx.Button(panel,label= "开始转换",pos= (530,7),size= (80,24))
         self.contentText = wx.TextCtrl(panel,pos= (5,35),size= (620,460),style= wx.TE_MULTILINE)
         # wx.TE_MULTILINE可以实现以滚动条方式多行显示文本,若不加此功能文本文档显示为一行
@@ -179,8 +179,8 @@ class Xl2location:
 
                 lineInfoLocate = "/"+ well_locate
                 if self.confCont.getIntPara("AddWellNumberName"):
-                    lineInfoName = str(well_years)[-2:] + str(self.departments[well_department]) + "-#" + str(well_name) + \
-                        '-' + str(well_number)[-5:]
+                    lineInfoName = str(well_years)[-2:] + str(self.departments[well_department]) + "-"  + \
+                    str(well_number)[-5:] + "-#" + str(well_name) 
                 else:
                     lineInfoName = str(well_years)[-2:] + str(self.departments[well_department]) + "-#" + str(well_name)
 
