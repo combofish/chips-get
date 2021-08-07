@@ -22,3 +22,6 @@ Shared codes edited in the learning period.
 
 ### Python3/file-script/turn.py
 读取目录下所用后缀为xlsx的文件，并把该文件复制到以该文件名命名的目录下（新建），并重新命名该xlsx文件。
+
+### Python3/DownloadImageCrawler/DownloadImageCrawler.py
+网络爬虫，从当前目录下的 csv 文件中获取图片名字，逐个访问web，获取该图片的详细信息，并新建分类目录，下载该图片。
