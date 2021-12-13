@@ -1,0 +1,7 @@
+* A Web Crawler
+  
+  + demo_1
+  + demo_2
+
+  这是一个用Python实现网络爬虫的示例：从网站上获取项目编号，构建项目详情的 link, 再保存项目详情到 xls 文件。 
+
